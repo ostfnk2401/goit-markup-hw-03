@@ -19,7 +19,6 @@ body{
     padding: 0 15px;
 }
 .header{
-    padding: 24px 0;
     border-bottom: 1px solid var(--subtle-backgrounds);
 }
 .header_container{
@@ -29,6 +28,7 @@ body{
 }
 .header_navigation{
     display: flex;
+    align-items: center;
     gap:76px;
 }
 .header_logo{
@@ -59,6 +59,8 @@ body{
     gap: 40px;
 }
 .header_links{
+    display: block;
+    padding: 24px;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -136,12 +138,16 @@ body{
     padding-top: 120px;
     padding-bottom: 120px;
 }
+.title{
+    text-align: center;
+    margin-bottom: 72px;
+}
 .features_list{
     display: flex;
     gap: 24px;
 }
 .features_item{
-    max-width: 264px;
+    width: 264px;
 }
 .services{
     padding-bottom: 120px;
@@ -149,12 +155,6 @@ body{
 .services_list{
     display: flex;
     gap: 24px;
-}
-.service_title{
-    max-width: 324px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 72px;
 }
 .team{
     padding-top: 120px;
@@ -190,6 +190,7 @@ body{
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 .description{
     line-height: 1.5;
@@ -221,7 +222,7 @@ body{
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--subtle-backgrounds);
-    max-width: 264px;
+    width: 264px;
     margin-top: 16px;
 }
 .buttons{
