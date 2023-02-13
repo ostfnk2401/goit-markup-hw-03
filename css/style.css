@@ -8,6 +8,28 @@
     --body-text:#434455;
     --body-color:#FFFFFF;
 }
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+h1,h2,h3,p{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+address{
+    font-style: normal;
+}
+button{
+    cursor:pointer;
+}
 body{
     font-family: 'Roboto', sans-serif;
     color: var(--main-color);
@@ -60,7 +82,7 @@ body{
 }
 .header_links{
     display: block;
-    padding: 24px;
+    padding: 24px 0;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -160,18 +182,14 @@ body{
     padding-top: 120px;
     padding-bottom: 120px;
 }
-.team_title{
-    max-width: 163px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 72px;
+.team_item{
+    background-color: var(--body-color);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
 }
 .team_list{
     display: flex;
     gap: 24px;
-}
-.team_item{
-    background-color: var(--body-color);
 }
 .visually-hidden{
     position: absolute;
@@ -191,10 +209,12 @@ body{
     line-height: 1.2;
     letter-spacing: 0.02em;
     margin-bottom: 8px;
+    color: var(--main-color);
 }
 .description{
     line-height: 1.5;
     letter-spacing: 0.02em;
+    color: var(--body-text);
 }
 .title{
     font-weight: 700;
@@ -206,6 +226,7 @@ body{
 .team{
     background-color: var(--light-mode-bg);
 }
+
 .team_text{
     text-align: center;
     padding: 32px 0;
@@ -250,8 +271,8 @@ body{
     letter-spacing: 0.04em;
 }
 .portfolio{
-
     padding-top: 96px;
+    padding-bottom: 120px;
 }
 .btn_list{
     display: flex;
@@ -272,5 +293,6 @@ body{
     padding-top: 32px;
     padding-bottom: 32px;
     padding-left: 16px;
-    border: 1px solid var(--subtle-backgrounds)
+    border: 1px solid var(--subtle-backgrounds);
+    border-top: none;
 }
